@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KumoaniGeet</title>
+    <link rel="stylesheet" href="style.css">
+   
+    <!-- <link rel="stylesheet" media="screen and (max-width: 1315px)" href="phone.css"> -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@500&family=Bree+Serif&display=swap"
+        rel="stylesheet">
+    <script src="kumaon.js"></script>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li class="navbar"><a href="#home" id="active">Home </a></li>
+            <li class="navbar"><a href="#RecentSongs">Recent Songs </a> </li>
+            <li class="navbar"><a href="#Mp3">Mp3 Download</a> </li> 
+            <li class="navbar"><a href="#Search">Search</a></li>
+            <li class="navbar"><a href="#Loginorsingup">Log In/Sign Up</a></li>
+            <li class="navbar"><a href="#AboutMe">About Me</a></li>
+        </ul>
+    </nav>
+
+    <div class="homecontent">
+        <section id="home">
+            <h2>HOME</h2>
+            <p>Where people are simple , innocent and hardworking . Where the sight of nani lake is always refreshing
+                .Where Shiva exist in ever stone. Where Dhol-Damu are not just instruments, they are emotions .
+                Where the sky bows down in front of the Himalayas that is Devbhoomi Uttarakhand </p>
+            <div>
+                <button id="launching">
+                    <img src="launch.png" alt="KumoaniGeet.com">
+                </button>
+                <script>
+                    function scrollfun7() {
+                        window.scrollTo({
+                            top: 0,
+                            behavior: "smooth"
+                        }
+                        );
+                    }
+                    document.getElementById("launching").addEventListener("click", scrollfun7);
+                </script>
+            </div>
+        </section>
+
+        <section id="RecentSongs">
+            <h2>RECENT SONGS</h2>
+            <div class="Recent">
+                <div class="songs">
+                    <h2>Tero lehanga </h2>
+                    <video width="400" height="280" controls src="tero lehanga.mp4" type="video/mp4"
+                        onmouseover="playsong(event)" onmouseout="pausesong(event)" class="vid"></video>
+                </div>
+
+
+                <div class="songs">
+                    <h2>Modern kumaon </h2>
+                    <video width="400" height="280" controls src="modern kumaon.mp4" type="video/mp4"
+                        onmouseover="playsong(event)" onmouseout="pausesong(event)" class="vid"></video>
+                </div>
+
+
+                <div class="songs">
+                    <h2>Hwolo Lagyo</h2>
+                    <video width="400" height="280" controls src="Hwolo Lagyo.mp4" type="video/mp4"
+                        onmouseover="playsong(event)" onmouseout="pausesong(event)" class="vid"></video>
+                </div>
+
+                <div class="songs">
+                    <h2>Left Right</h2>
+                    <video width="400" height="280" controls src="left right.mp4" type="video/mp4"
+                        onmouseover="playsong(event)" onmouseout="pausesong(event)" class="vid"></video>
+                </div>
+                <div class="songs">
+                    <h2>Gumai Gumai</h2>
+                    <video width="400" height="280" controls src="gumai.mp4" type="video/mp4"
+                        onmouseover="playsong(event)" onmouseout="pausesong(event)" class="vid"></video>
+                </div>
+            </div>
+        </section>
+
+        <section id="Mp3">
+            <h2> MP3 DOWNLOAD </h2>
+            <div id="containermp3">
+                <div id="latestmp3songs">
+                    <h2> Famous Latest Songs </h2>
+                    <h3>Tero lehanga</h3>
+                    <audio controls src="terolehangemp3.mp3" type="audio/mp3" onmouseover="playaudiosong(event)"
+                        onmouseout="pauseaudiosong(event)" class="aud"></audio>
+                    <h3>modern kumaon</h3>
+                    <audio controls src="modernkumaonmp3.mp3" type="audio/mp3" onmouseover="playaudiosong(event)"
+                        onmouseout="pauseaudiosong(event)" class="aud"></audio>
+                    <h3>Gumai Gumai</h3>
+                    <audio controls src="Gumaimp3.mp3" type="audio/mp3" onmouseover="playaudiosong(event)"
+                        onmouseout="pauseaudiosong(event)" class="aud"></audio>
+                    <h3>Hwolo Lagyo</h3>
+                    <audio controls src="HwoloLagyo mp3.mp3" type="audio/mp3" onmouseover="playaudiosong(event)"
+                        onmouseout="pauseaudiosong(event)" class="aud"></audio>
+                </div>
+
+                <div id="famousmp3Song">
+                    <h2> Famous Old Songs</h2>
+                    <h3>Jo Tu Banali Meri Joridara</h3>
+                    <audio controls src="jo tu banali meri joridara.mp3" type="audio/mp3"
+                        onmouseover="playaudiosong(event)" onmouseout="pauseaudiosong(event)" class="aud"></audio>
+                    <h3>Bedu Pa Ko</h3>
+                    <audio controls src="bedu pa ko.mp3" type="audio/mp3" onmouseover="playaudiosong(event)"
+                        onmouseout="pauseaudiosong(event)" class="aud"></audio>
+                    <h3>O Chandu Driver</h3>
+                    <audio controls src="o chandu driver.mp3" type="audio/mp3" onmouseover="playaudiosong(event)"
+                        onmouseout="pauseaudiosong(event)" class="aud"></audio>
+                    <h3>Aaj Ka Dina</h3>
+                    <audio controls src="aaj ka dina.mp3" type="audio/mp3" onmouseover="playaudiosong(event)"
+                        onmouseout="pauseaudiosong(event)" class="aud"></audio>
+                </div>
+            </div>
+        </section>
+        <section id="Search">
+            <h2> SEARCH </h2>
+            <div id="searchbox">
+                <input type="text" placeholder="Search Any Song " id="TypeSearch">
+                <button>Search</button>
+            </div>
+        </section>
+        <section id="Loginorsingup">
+            <h2> SINGNUP/SINGNUP </h2>
+            <div id="Loginorsingupform">
+                <form action="backend.php">
+                    <input type="text" placeholder="Enter Your Name ">
+                    <input type="email" placeholder="Enter Your Email">
+                    <input type="date">
+                    <button> SingUp</button>
+                    <button> Login</button>
+                    <button> Reset</button>
+                </form>
+            </div>
+        </section>
+
+        <section id="AboutMe">
+            <h2> About Me </h2>
+            <div id="Profilecontainer">
+                <div id="MyImgage">
+                    <img src="portfolio3.png" alt="KumoaniGeet.com">
+
+                </div>
+                <div id="MyDetails">
+                    <h1><Strong> Pankaj Singh Raikwal</Strong></h1>
+                    <p> 5 ⭐ Coder( C++) , 2 ⭐ Coder (C) In Hacker Rank , Pursuing Btech From LPU(Lovely Professional
+                        University ), Currently Working In NeoEducation In Campus Ambasdor Program
+                    </p>
+                    <p><strong>Skills : </strong>C , C++ , Python , HTML , CSS ,
+                        JavaScript , SQL , PL/SQL , Java</p>
+                    <p><strong>Email Id : </strong> pankajsr412@gmail.com</p>
+
+                    <div id="contcting">
+
+                        <img src="linkedin.png" alt="KumoaniGeet.com" usemap="#workmap1">
+                        <map name="workmap1">
+                            <area shape="default" href="https://www.linkedin.com/in/pankaj-singh-7832151bb/"
+                                alt="KumoaniGeet.com" target="_blank">
+                        </map>
+
+                        <img src="facebook.png" alt="KumoaniGeet.com" usemap="#workmap2">
+                        <map name="workmap2">
+                            <area shape="default" href="https://www.facebook.com/pankajsingh.raikwal.3/"
+                                alt="KumoaniGeet.com" target="_blank">
+                        </map>
+
+                        <img src="instagram.png" alt="KumoaniGeet.com" usemap="#workmap3">
+                        <map name="workmap3">
+                            <area shape="default" href="https://www.instagram.com/ia_mamta/" alt="KumoaniGeet.com"
+                                target="_blank">
+                        </map>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div id="center">
+                Copyright &copy; MyPortfolio.com. All rights reserved
+            </div>
+        </footer>
+
+    </div>
+
+</body>
+
+</html>
